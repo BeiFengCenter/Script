@@ -11,10 +11,7 @@ local Window = OrionLib:MakeWindow({Name = "北风中心-密钥系统", HidePrem
 
 local PlayersUserName = game.Players.LocalPlayer.Name
 
-whitelist = {
-	-- bc:参加过测试的创作者 b:参加过测试的玩家 c:创作者 w:白名单人员
-	["CN_MIXUE"] = "bc",
-}
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/BeiFengUWU/Scripts/main/WhiteLists.lua"),true))()
 
 local statement = Window:MakeTab({
 	Name = "关于",
@@ -51,7 +48,7 @@ key:AddButton({
 				Image = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
 				Time = 3
 			})
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/UWUBeiFeng/Scripts/main/BeiFengCenter.lua"),true))()
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/BeiFengUWU/Scripts/main/BeiFengCenter.lua"),true))()
 		else 
 			OrionLib:MakeNotification({
 				Name = "北风中心",
